@@ -27,6 +27,8 @@
   nav { position:fixed;top:0;left:0;right:0;z-index:100;padding:20px 48px;display:flex;align-items:center;justify-content:space-between;backdrop-filter:blur(20px);background:rgba(26,5,51,0.75);border-bottom:1px solid rgba(123,63,207,0.2); }
   .nav-logo { font-family:'Syne',sans-serif;font-weight:800;font-size:1.4rem;color:var(--white);text-decoration:none; }
   .nav-logo span { color:var(--p5); }
+  .nav-back { display:flex;align-items:center;gap:8px;font-size:0.88rem;color:var(--muted);text-decoration:none;transition:color 0.2s; }
+  .nav-back:hover { color:var(--p6); }
   .nav-links { display:flex;gap:32px;list-style:none; }
   .nav-links a { font-size:0.88rem;font-weight:500;color:var(--muted);text-decoration:none;letter-spacing:0.5px;transition:color 0.2s;position:relative; }
   .nav-links a::after { content:'';position:absolute;bottom:-4px;left:0;right:0;height:1px;background:var(--p5);transform:scaleX(0);transition:transform 0.25s; }
@@ -42,6 +44,9 @@
   .page-hero {
     padding:64px 24px 56px;text-align:center;
   }
+  .breadcrumb { display:inline-flex;align-items:center;gap:8px;font-size:0.78rem;color:var(--muted);margin-bottom:20px; }
+  .breadcrumb a { color:var(--p5);text-decoration:none; }
+  .breadcrumb a:hover { text-decoration:underline; }
   .page-badge {
     display:inline-flex;align-items:center;gap:8px;
     background:rgba(123,63,207,0.18);border:1px solid rgba(123,63,207,0.4);
@@ -179,11 +184,11 @@
 <div class="bg-blob blob2"></div>
 
 <nav>
-  <a href="https://kawarastore-id.github.io/Beranda/" class="nav-logo">Kawara<span>Jasa</span></a>
+  <a href="./" class="nav-logo">Kawara<span>Jasa</span></a>
   <ul class="nav-links">
-    <li><a href="https://kawarastore-id.github.io/Beranda/">Beranda</a></li>
-    <li><a href="https://kawarastore-id.github.io/BerandaDigital/" style="color:var(--accent)">Jasa Digital</a></li>
-    <li><a href="https://kawarastore-id.github.io/BerandaRoblox/">Roblox</a></li>
+    <li><a href="./">Beranda</a></li>
+    <li><a href="./jasa.html" style="color:var(--accent)">Jasa Digital</a></li>
+    <li><a href="./roblox.html">Roblox</a></li>
     <li><a href="https://wa.me/6287720254002?text=Nama%20%3A%0APesanan%20%3A" target="_blank" class="nav-cta">Order WA ↗</a></li>
   </ul>
 </nav>
@@ -192,6 +197,11 @@
 
   <!-- PAGE HERO -->
   <div class="page-hero">
+    <div class="breadcrumb">
+      <a href="./">Beranda</a>
+      <span>›</span>
+      <span>Jasa Digital</span>
+    </div>
     <div class="page-badge">📁 Jasa Digital</div>
     <h1>Jasa <em>Digital</em><br>Serba Bisa</h1>
     <p>PDF, dokumen, foto, CV, poster, dan PPT. Harga mulai Rp2.000 — cepat, rapi, terpercaya.</p>
@@ -394,9 +404,9 @@
 <footer>
   <div class="footer-brand">Kawara<span>Jasa</span></div>
   <div class="footer-links">
-    <a href="https://kawarastore-id.github.io/Beranda/">Beranda</a>
-    <a href="https://kawarastore-id.github.io/BerandaDigital/">Jasa Digital</a>
-    <a href="https://kawarastore-id.github.io/BerandaRoblox/">Roblox</a>
+    <a href="./">Beranda</a>
+    <a href="./jasa.html">Jasa Digital</a>
+    <a href="./roblox.html">Roblox</a>
   </div>
   <div class="footer-copy">© 2025 Kawara Jasa</div>
 </footer>
